@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Rule Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Basketball Rule Insights Logo">
+            <h1>Basketball Rule Insights</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Rules Analyzer</a></li>
+                <li><a href="#">Rule History</a></li>
+                <li><a href="#">Game Impact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Understand Basketball Rules <span>Like a Pro</span></h1>
+                <p>AI-powered analysis of basketball rules and their impact on gameplay</p>
+                <button id="get-started">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/basketball-court.svg" alt="Basketball Court">
+            </div>
+        </section>
+
+        <section class="rules-analyzer">
+            <h2>Rules Analyzer</h2>
+            <div class="analyzer-container">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="rule-search" placeholder="Search for a rule or ask a question...">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="quick-topics">
+                        <span>Popular Topics:</span>
+                        <button class="topic-button" data-topic="shot clock">Shot Clock</button>
+                        <button class="topic-button" data-topic="goaltending">Goaltending</button>
+                        <button class="topic-button" data-topic="foul rules">Fouls</button>
+                        <button class="topic-button" data-topic="backcourt violation">Backcourt</button>
+                    </div>
+                </div>
+                
+                <div class="results-container">
+                    <div id="loading" class="hidden">
+                        <div class="spinner"></div>
+                        <p>Analyzing your question...</p>
+                    </div>
+                    <div id="results" class="hidden">
+                        <div class="result-header">
+                            <h3 id="result-title">Rule Analysis</h3>
+                            <div class="actions">
+                                <button id="save-result"><i class="fas fa-bookmark"></i></button>
+                                <button id="share-result"><i class="fas fa-share-alt"></i></button>
+                            </div>
+                        </div>
+                        <div id="result-content" class="result-content">
+                            <!-- Results will be inserted here -->
+                        </div>
+                        <div class="related-questions">
+                            <h4>Related Questions</h4>
+                            <ul id="related-questions-list">
+                                <!-- Related questions will be inserted here -->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div id="welcome-screen">
+                        <h3>Ask About Any Basketball Rule</h3>
+                        <p>Get clear explanations, historical context, and understand how rules affect gameplay.</p>
+                        <div class="example-questions">
+                            <h4>Example Questions:</h4>
+                            <ul>
+                                <li><button class="example-question" data-question="What is the NBA shot clock rule and how has it changed over time?">What is the NBA shot clock rule and how has it changed over time?</button></li>
+                                <li><button class="example-question" data-question="Explain the difference between a blocking foul and a charge.">Explain the difference between a blocking foul and a charge.</button></li>
+                                <li><button class="example-question" data-question="How do FIBA rules differ from NBA rules?">How do FIBA rules differ from NBA rules?</button></li>
+                                <li><button class="example-question" data-question="What is a clear path foul and when was it introduced?">What is a clear path foul and when was it introduced?</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Comprehensive Rule Database</h3>
+                    <p>Access current NBA, FIBA, NCAA, and high school basketball rules in one place.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Historical Context</h3>
+                    <p>Understand how rules have evolved and why changes were implemented.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Game Impact Analysis</h3>
+                    <p>Explore how specific rules affect gameplay, strategy, and statistical outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Visual Examples</h3>
+                    <p>See rules in action with animated examples and real-game footage references.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-small.png" alt="Basketball Rule Insights Logo">
+                <p>Basketball Rule Insights</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rules Analyzer</a></li>
+                    <li><a href="#">Rule History</a></li>
+                    <li><a href="#">Game Impact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Rule Book</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for the latest rule changes and features.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Basketball Rule Insights. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="share-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Share This Insight</h3>
+            <div class="share-options">
+                <button class="share-option" data-platform="twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </button>
+                <button class="share-option" data-platform="facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </button>
+                <button class="share-option" data-platform="linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </button>
+                <button class="share-option" data-platform="email">
+                    <i class="fas fa-envelope"></i> Email
+                </button>
+            </div>
+            <div class="copy-link">
+                <input type="text" id="share-link" readonly>
+                <button id="copy-link-button">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

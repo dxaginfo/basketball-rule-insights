@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Basketball Court</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="courtGradient">
+            <stop stop-color="#E74C3D" offset="0%"></stop>
+            <stop stop-color="#C0392B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Basketball-Court" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Court Background -->
+        <rect id="Court" fill="url(#courtGradient)" x="0" y="0" width="800" height="500" rx="4"></rect>
+        
+        <!-- Court Lines (white) -->
+        <g id="Court-Lines" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Court Outline -->
+            <rect id="Court-Outline" x="50" y="50" width="700" height="400" rx="2"></rect>
+            
+            <!-- Center Line -->
+            <line x1="400" y1="50" x2="400" y2="450" id="Center-Line"></line>
+            
+            <!-- Center Circle -->
+            <circle id="Center-Circle" cx="400" cy="250" r="60"></circle>
+            
+            <!-- Three Point Lines - Left -->
+            <path d="M150,250 C150,197.5 192.5,155 245,155 L245,345 C192.5,345 150,302.5 150,250 Z" id="Three-Point-Left"></path>
+            
+            <!-- Three Point Lines - Right -->
+            <path d="M650,250 C650,197.5 607.5,155 555,155 L555,345 C607.5,345 650,302.5 650,250 Z" id="Three-Point-Right"></path>
+            
+            <!-- Key (Paint) - Left -->
+            <rect id="Key-Left" x="50" y="155" width="130" height="190"></rect>
+            
+            <!-- Key (Paint) - Right -->
+            <rect id="Key-Right" x="620" y="155" width="130" height="190"></rect>
+            
+            <!-- Free Throw Line - Left -->
+            <line x1="180" y1="155" x2="180" y2="345" id="Free-Throw-Left"></line>
+            
+            <!-- Free Throw Line - Right -->
+            <line x1="620" y1="155" x2="620" y2="345" id="Free-Throw-Right"></line>
+            
+            <!-- Free Throw Circle - Left -->
+            <path d="M180,250 C180,227.5 198,205 225,205 C252,205 270,227.5 270,250" id="Free-Throw-Circle-Left" stroke-dasharray="5,5"></path>
+            
+            <!-- Free Throw Circle - Right -->
+            <path d="M620,250 C620,227.5 602,205 575,205 C548,205 530,227.5 530,250" id="Free-Throw-Circle-Right" stroke-dasharray="5,5"></path>
+            
+            <!-- Backboard - Left -->
+            <line x1="70" y1="225" x2="70" y2="275" id="Backboard-Left"></line>
+            
+            <!-- Backboard - Right -->
+            <line x1="730" y1="225" x2="730" y2="275" id="Backboard-Right"></line>
+            
+            <!-- Basket - Left -->
+            <circle id="Basket-Left" cx="90" cy="250" r="15" fill="none"></circle>
+            
+            <!-- Basket - Right -->
+            <circle id="Basket-Right" cx="710" cy="250" r="15" fill="none"></circle>
+        </g>
+        
+        <!-- Shot Clock Indicators -->
+        <g id="Shot-Clocks" fill="#FFFFFF" font-family="Arial-BoldMT, Arial" font-size="20" font-weight="bold">
+            <text id="Shot-Clock-Left" x="90" y="290">24</text>
+            <text id="Shot-Clock-Right" x="710" y="290">24</text>
+        </g>
+        
+        <!-- Baseline Text -->
+        <g id="Baseline-Text" fill="#FFFFFF" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold">
+            <text id="Home" x="670" y="80">HOME</text>
+            <text id="Away" x="110" y="80">AWAY</text>
+        </g>
+        
+        <!-- Court Markings (Circles and Hash Marks) -->
+        <g id="Court-Markings" stroke="#FFFFFF" stroke-width="2">
+            <!-- Hash Marks - Left Free Throw -->
+            <line x1="140" y1="175" x2="150" y2="175" id="Hash-1-Left"></line>
+            <line x1="140" y1="205" x2="150" y2="205" id="Hash-2-Left"></line>
+            <line x1="140" y1="295" x2="150" y2="295" id="Hash-3-Left"></line>
+            <line x1="140" y1="325" x2="150" y2="325" id="Hash-4-Left"></line>
+            
+            <!-- Hash Marks - Right Free Throw -->
+            <line x1="660" y1="175" x2="650" y2="175" id="Hash-1-Right"></line>
+            <line x1="660" y1="205" x2="650" y2="205" id="Hash-2-Right"></line>
+            <line x1="660" y1="295" x2="650" y2="295" id="Hash-3-Right"></line>
+            <line x1="660" y1="325" x2="650" y2="325" id="Hash-4-Right"></line>
+        </g>
+        
+        <!-- Center Court Logo (simplified) -->
+        <circle id="Center-Logo" cx="400" cy="250" r="40" fill="#F39C12" opacity="0.7"></circle>
+        
+        <!-- Ball -->
+        <g id="Ball" transform="translate(420, 230)">
+            <circle id="Ball-Base" fill="#F39C12" cx="15" cy="15" r="15"></circle>
+            <path d="M5,15 C5,9.5 9.5,5 15,5 C20.5,5 25,9.5 25,15 C25,20.5 20.5,25 15,25 C9.5,25 5,20.5 5,15 Z" id="Ball-Lines" stroke="#30336B" stroke-width="1.5"></path>
+            <line x1="15" y1="5" x2="15" y2="25" id="Ball-Line-Vertical" stroke="#30336B" stroke-width="1.5"></line>
+        </g>
+    </g>
+</svg>
